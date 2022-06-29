@@ -1,8 +1,8 @@
-package root.repository;
-
-import root.loggers.Log;
+package root.repository.valueObjects;
 
 import java.util.List;
+
+import root.loggers.entities.Log;
 
 public class LogResponse {
 

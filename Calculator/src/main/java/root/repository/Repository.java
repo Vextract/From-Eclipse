@@ -1,9 +1,9 @@
 package root.repository;
 
-import root.loggers.Log;
-
 import java.util.Date;
 import java.util.List;
+
+import root.loggers.entities.Log;
 
 public interface Repository {
 

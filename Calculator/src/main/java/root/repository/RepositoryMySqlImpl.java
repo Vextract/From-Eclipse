@@ -3,8 +3,9 @@ package root.repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
-import root.loggers.Log;
-import root.loggers.LogMapper;
+
+import root.loggers.entities.Log;
+import root.loggers.utility.LogMapper;
 
 import java.util.*;
 import java.util.stream.Collectors;

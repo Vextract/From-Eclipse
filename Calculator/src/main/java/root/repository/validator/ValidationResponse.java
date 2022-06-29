@@ -1,4 +1,4 @@
-package root.repository;
+package root.repository.validator;
 
 public class ValidationResponse {
 

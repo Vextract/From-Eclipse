@@ -1,4 +1,4 @@
-package root.view;
+package root.utility.view;
 
 import org.springframework.stereotype.Component;
 

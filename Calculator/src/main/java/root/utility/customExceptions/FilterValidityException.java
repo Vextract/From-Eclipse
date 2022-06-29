@@ -1,4 +1,4 @@
-package root.customExceptions;
+package root.utility.customExceptions;
 
 public class FilterValidityException extends Exception {
 

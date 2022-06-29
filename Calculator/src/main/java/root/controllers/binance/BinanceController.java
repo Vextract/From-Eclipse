@@ -1,4 +1,4 @@
-package root.controller;
+package root.controllers.binance;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

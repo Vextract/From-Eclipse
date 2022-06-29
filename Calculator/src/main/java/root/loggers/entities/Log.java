@@ -1,4 +1,4 @@
-package root.loggers;
+package root.loggers.entities;
 
 import java.util.Date;
 

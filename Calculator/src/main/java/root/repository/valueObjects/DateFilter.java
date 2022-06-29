@@ -1,4 +1,4 @@
-package root.repository;
+package root.repository.valueObjects;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

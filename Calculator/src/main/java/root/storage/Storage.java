@@ -1,6 +1,6 @@
 package root.storage;
 
-import root.loggers.LogEntry;
+import root.loggers.entities.LogEntry;
 import root.main.Response;
 
 public interface Storage {

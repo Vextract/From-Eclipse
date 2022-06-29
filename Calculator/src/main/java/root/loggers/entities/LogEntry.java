@@ -1,7 +1,7 @@
-package root.loggers;
+package root.loggers.entities;
 
-import root.customExceptions.NotEnoughArgumentsException;
-import root.customExceptions.UnsupportedOperationExceptionCustom;
+import root.utility.customExceptions.NotEnoughArgumentsException;
+import root.utility.customExceptions.UnsupportedOperationExceptionCustom;
 
 import java.util.Date;
 

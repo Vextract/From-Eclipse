@@ -1,16 +1,18 @@
-package root.controller;
+package root.controllers.calculation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
-import root.customExceptions.NotEnoughArgumentsException;
-import root.customExceptions.UnsupportedOperationExceptionCustom;
+
+import root.controllers.Controller;
 import root.loggers.AbstractLogger;
-import root.loggers.LogEntry;
+import root.loggers.entities.LogEntry;
 import root.main.CalculationPackage;
 import root.main.Response;
 import root.model.Model;
-import root.view.View;
+import root.utility.customExceptions.NotEnoughArgumentsException;
+import root.utility.customExceptions.UnsupportedOperationExceptionCustom;
+import root.utility.view.View;
 
 @RequestMapping("calculation_api")
 @RestController

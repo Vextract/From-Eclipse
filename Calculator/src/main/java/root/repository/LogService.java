@@ -1,9 +1,13 @@
-package root.loggers;
+package root.repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import root.customExceptions.FilterValidityException;
-import root.repository.*;
+
+import root.loggers.entities.Log;
+import root.repository.validator.FiltersValidator;
+import root.repository.validator.ValidationResponse;
+import root.repository.valueObjects.DateFilter;
+import root.utility.customExceptions.FilterValidityException;
 
 import java.util.List;
 

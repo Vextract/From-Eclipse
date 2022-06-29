@@ -1,6 +1,8 @@
-package root.repository;
+package root.repository.validator;
 
 import org.springframework.stereotype.Component;
+
+import root.repository.valueObjects.DateFilter;
 
 import java.util.*;
 

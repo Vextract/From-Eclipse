@@ -1,13 +1,14 @@
-package root.controller;
+package root.controllers.logs;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import root.customExceptions.FilterValidityException;
-import root.loggers.LogService;
-import root.repository.DateFilter;
-import root.repository.FiltersValidator;
-import root.repository.LogResponse;
+
+import root.repository.LogService;
 import root.repository.Repository;
+import root.repository.validator.FiltersValidator;
+import root.repository.valueObjects.DateFilter;
+import root.repository.valueObjects.LogResponse;
+import root.utility.customExceptions.FilterValidityException;
 
 @RequestMapping("repositorySql")
 @RestController()

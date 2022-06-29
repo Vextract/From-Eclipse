@@ -1,5 +1,6 @@
 package root.loggers;
 
+import root.loggers.entities.LogEntry;
 import root.main.Response;
 
 import java.text.SimpleDateFormat;

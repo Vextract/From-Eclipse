@@ -3,6 +3,8 @@ package root.loggers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
+
+import root.loggers.entities.LogEntry;
 import root.main.Response;
 import root.storage.Storage;
 

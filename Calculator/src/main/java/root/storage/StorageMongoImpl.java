@@ -3,7 +3,8 @@ package root.storage;
 import com.mongodb.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import root.loggers.LogEntry;
+
+import root.loggers.entities.LogEntry;
 import root.main.Response;
 
 import java.io.PrintWriter;

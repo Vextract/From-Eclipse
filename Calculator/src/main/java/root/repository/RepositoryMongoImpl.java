@@ -1,7 +1,8 @@
 package root.repository;
 
 import com.mongodb.*;
-import root.loggers.Log;
+
+import root.loggers.entities.Log;
 
 import java.sql.Date;
 import java.util.ArrayList;
