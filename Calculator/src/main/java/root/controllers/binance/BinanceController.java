@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import root.binance.BinanceAdapter;
-import root.binance.CurrenciesRate;
+import root.binance.valueObjects.CurrenciesRate;
 
 import java.util.List;
 

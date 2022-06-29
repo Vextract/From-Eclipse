@@ -1,4 +1,4 @@
-package root.binance;
+package root.binance.valueObjects;
 
 public class CurrenciesRate {
 

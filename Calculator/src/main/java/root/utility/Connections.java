@@ -1,4 +1,4 @@
-package root.main;
+package root.utility;
 
 import com.mongodb.DB;
 import com.mongodb.MongoClient;

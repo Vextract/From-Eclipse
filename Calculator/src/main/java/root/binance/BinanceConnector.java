@@ -1,9 +1,9 @@
 package root.binance;
 
 import org.springframework.stereotype.Component;
-import root.main.Connections;
 
-
+import root.binance.interfaces.Connector;
+import root.utility.Connections;
 
 import java.io.IOException;
 import java.io.InputStream;

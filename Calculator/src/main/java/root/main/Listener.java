@@ -3,7 +3,7 @@ package root.main;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import root.binance.BinanceAdapter;
-import root.binance.CurrenciesRate;
+import root.binance.valueObjects.CurrenciesRate;
 import root.controllers.Controller;
 import root.controllers.calculation.ControllerImpl2;
 import root.loggers.AbstractLogger;
