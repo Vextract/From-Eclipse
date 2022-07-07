@@ -4,10 +4,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import root.loggers.AbstractLogger;
-import root.loggers.LoggerToDB;
-import root.storage.StorageMongoImpl;
-import root.utility.Connections;
+
+import com.mongodb.DB;
+import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
 
 import javax.sql.DataSource;
 
@@ -28,5 +28,11 @@ public class SpringConfig {
     @Bean
     public JdbcTemplate jdbcTemplate() {
         return new JdbcTemplate(dataSource());
+    }
+    
+    @Bean
+    public DB db() {
+    	return new MongoClient(new MongoClientURI("mongodb://localhost:27017"))
+        .getDB("DataLog");
     }
 }

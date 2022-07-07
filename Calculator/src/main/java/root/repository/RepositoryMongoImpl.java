@@ -7,7 +7,13 @@ import root.loggers.entities.Log;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class RepositoryMongoImpl implements Repository {
 
     private DB database;
@@ -39,17 +45,26 @@ public class RepositoryMongoImpl implements Repository {
 
     @Override
     public List<Log> getErrorsLogFromDate(java.util.Date from) {
-        return null;
+        List<Log> logs =  getErrorsLog();
+        return logs.stream()
+                .filter(log -> !log.getDate().before(from))
+                .collect(Collectors.toList());
     }
-
 
     @Override
     public List<Log> getErrorsLogToDate(java.util.Date to) {
-        return null;
+        List<Log> logs =  getErrorsLog();
+        return logs.stream()
+                .filter(log -> !log.getDate().after(to))
+                .collect(Collectors.toList());
     }
 
     @Override
     public List<Log> getErrorsLogByTwoFilters(java.util.Date from, java.util.Date to) {
-        return null;
+        List<Log> logs =  getErrorsLog();
+        return logs.stream()
+                .filter(log -> !log.getDate().before(from)
+                        && !log.getDate().after(to))
+                .collect(Collectors.toList());
     }
 }

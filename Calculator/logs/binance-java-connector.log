@@ -1,0 +1,167 @@
+2022-07-07 10:43:40.407[1657179820407] | INFO  | main       | root.Operations                      - Starting Operations using Java 18.0.1.1 on DESKTOP-NQ4MVB7 with PID 1476 (E:\Games\git\From-Eclipse\Calculator\target\classes started by Михаил in E:\Games\git\From-Eclipse\Calculator)
+2022-07-07 10:43:40.425[1657179820425] | INFO  | main       | root.Operations                      - No active profile set, falling back to 1 default profile: "default"
+2022-07-07 10:43:41.765[1657179821765] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8080 (http)
+2022-07-07 10:43:41.786[1657179821786] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-07 10:43:41.787[1657179821787] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2022-07-07 10:43:41.787[1657179821787] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-07 10:43:41.931[1657179821931] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2022-07-07 10:43:41.931[1657179821931] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1399 ms
+2022-07-07 10:43:42.190[1657179822190] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 10:43:42.234[1657179822234] | WARN  | main       | o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'calculationController' defined in file [E:\Games\git\From-Eclipse\Calculator\target\classes\root\controllers\calculation\CalculationController.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'root.controllers.calculation.CalculatorService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-07-07 10:43:42.240[1657179822240] | INFO  | main       | o.a.catalina.core.StandardService    - Stopping service [Tomcat]
+2022-07-07 10:43:42.258[1657179822258] | INFO  | cluster-ClusterId{value='62c68eae881abd608fc5186a', description='null'}-localhost:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
+2022-07-07 10:43:42.270[1657179822270] | INFO  | main       | o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-07 10:43:42.287[1657179822287] | INFO  | cluster-ClusterId{value='62c68eae881abd608fc5186a', description='null'}-localhost:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=21660600}
+2022-07-07 10:43:42.322[1657179822322] | ERROR | main       | o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in root.controllers.calculation.CalculationController required a bean of type 'root.controllers.calculation.CalculatorService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'root.controllers.calculation.CalculatorService' in your configuration.
+
+2022-07-07 10:48:13.921[1657180093921] | INFO  | main       | root.Operations                      - Starting Operations using Java 18.0.1.1 on DESKTOP-NQ4MVB7 with PID 6584 (E:\Games\git\From-Eclipse\Calculator\target\classes started by Михаил in E:\Games\git\From-Eclipse\Calculator)
+2022-07-07 10:48:13.925[1657180093925] | INFO  | main       | root.Operations                      - No active profile set, falling back to 1 default profile: "default"
+2022-07-07 10:48:15.162[1657180095162] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8080 (http)
+2022-07-07 10:48:15.175[1657180095175] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-07 10:48:15.175[1657180095175] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2022-07-07 10:48:15.178[1657180095178] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-07 10:48:15.326[1657180095326] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2022-07-07 10:48:15.327[1657180095327] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1330 ms
+2022-07-07 10:48:15.593[1657180095593] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 10:48:15.645[1657180095645] | WARN  | main       | o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'calculationController' defined in file [E:\Games\git\From-Eclipse\Calculator\target\classes\root\controllers\calculation\CalculationController.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'calculatorService' defined in file [E:\Games\git\From-Eclipse\Calculator\target\classes\root\controllers\calculation\CalculatorService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'root.controllers.calculation.CalcPackageValidator' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-07-07 10:48:15.651[1657180095651] | INFO  | main       | o.a.catalina.core.StandardService    - Stopping service [Tomcat]
+2022-07-07 10:48:15.668[1657180095668] | INFO  | cluster-ClusterId{value='62c68fbfec3b316841deeaa6', description='null'}-localhost:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:1, serverValue:2}] to localhost:27017
+2022-07-07 10:48:15.674[1657180095674] | INFO  | cluster-ClusterId{value='62c68fbfec3b316841deeaa6', description='null'}-localhost:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4248899}
+2022-07-07 10:48:15.680[1657180095680] | INFO  | main       | o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-07 10:48:15.707[1657180095707] | ERROR | main       | o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in root.controllers.calculation.CalculatorService required a bean of type 'root.controllers.calculation.CalcPackageValidator' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'root.controllers.calculation.CalcPackageValidator' in your configuration.
+
+2022-07-07 10:48:43.120[1657180123120] | INFO  | main       | root.Operations                      - Starting Operations using Java 18.0.1.1 on DESKTOP-NQ4MVB7 with PID 1784 (E:\Games\git\From-Eclipse\Calculator\target\classes started by Михаил in E:\Games\git\From-Eclipse\Calculator)
+2022-07-07 10:48:43.124[1657180123124] | INFO  | main       | root.Operations                      - No active profile set, falling back to 1 default profile: "default"
+2022-07-07 10:48:44.531[1657180124531] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8080 (http)
+2022-07-07 10:48:44.544[1657180124544] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-07 10:48:44.545[1657180124545] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2022-07-07 10:48:44.545[1657180124545] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-07 10:48:44.688[1657180124688] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2022-07-07 10:48:44.688[1657180124688] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1485 ms
+2022-07-07 10:48:44.937[1657180124937] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 10:48:44.992[1657180124992] | INFO  | cluster-ClusterId{value='62c68fdce6601873eebc1115', description='null'}-localhost:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:1, serverValue:3}] to localhost:27017
+2022-07-07 10:48:44.997[1657180124997] | INFO  | cluster-ClusterId{value='62c68fdce6601873eebc1115', description='null'}-localhost:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3642400}
+2022-07-07 10:48:45.425[1657180125425] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 10:48:45.437[1657180125437] | INFO  | cluster-ClusterId{value='62c68fdde6601873eebc1116', description='null'}-localhost:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:2, serverValue:4}] to localhost:27017
+2022-07-07 10:48:45.446[1657180125446] | INFO  | cluster-ClusterId{value='62c68fdde6601873eebc1116', description='null'}-localhost:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8417099}
+2022-07-07 10:48:45.461[1657180125461] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-07 10:48:45.490[1657180125490] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-07 10:48:45.502[1657180125502] | INFO  | main       | root.Operations                      - Started Operations in 2.766 seconds (JVM running for 3.418)
+2022-07-07 10:49:32.508[1657180172508] | INFO  | http-nio-8080-exec-2 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 10:49:32.508[1657180172508] | INFO  | http-nio-8080-exec-2 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2022-07-07 10:49:32.510[1657180172510] | INFO  | http-nio-8080-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 2 ms
+2022-07-07 10:49:32.665[1657180172665] | INFO  | http-nio-8080-exec-2 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:3, serverValue:19}] to localhost:27017
+2022-07-07 10:51:31.493[1657180291493] | INFO  | main       | root.Operations                      - Starting Operations using Java 18.0.1.1 on DESKTOP-NQ4MVB7 with PID 11236 (E:\Games\git\From-Eclipse\Calculator\target\classes started by Михаил in E:\Games\git\From-Eclipse\Calculator)
+2022-07-07 10:51:31.500[1657180291500] | INFO  | main       | root.Operations                      - No active profile set, falling back to 1 default profile: "default"
+2022-07-07 10:51:32.747[1657180292747] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8080 (http)
+2022-07-07 10:51:32.759[1657180292759] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-07 10:51:32.760[1657180292760] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2022-07-07 10:51:32.760[1657180292760] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-07 10:51:32.900[1657180292900] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2022-07-07 10:51:32.900[1657180292900] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1324 ms
+2022-07-07 10:51:33.168[1657180293168] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 10:51:33.229[1657180293229] | INFO  | cluster-ClusterId{value='62c690855c968409f1679cee', description='null'}-localhost:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:1, serverValue:20}] to localhost:27017
+2022-07-07 10:51:33.237[1657180293237] | INFO  | cluster-ClusterId{value='62c690855c968409f1679cee', description='null'}-localhost:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3475200}
+2022-07-07 10:51:33.847[1657180293847] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 10:51:33.862[1657180293862] | INFO  | cluster-ClusterId{value='62c690855c968409f1679cef', description='null'}-localhost:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:2, serverValue:21}] to localhost:27017
+2022-07-07 10:51:33.867[1657180293867] | INFO  | cluster-ClusterId{value='62c690855c968409f1679cef', description='null'}-localhost:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5208600}
+2022-07-07 10:51:33.893[1657180293893] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-07 10:51:33.912[1657180293912] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-07 10:51:33.922[1657180293922] | INFO  | main       | root.Operations                      - Started Operations in 2.79 seconds (JVM running for 3.473)
+2022-07-07 10:51:38.658[1657180298658] | INFO  | http-nio-8080-exec-2 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 10:51:38.659[1657180298659] | INFO  | http-nio-8080-exec-2 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2022-07-07 10:51:38.667[1657180298667] | INFO  | http-nio-8080-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 8 ms
+2022-07-07 10:51:51.888[1657180311888] | INFO  | http-nio-8080-exec-4 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:3, serverValue:22}] to localhost:27017
+2022-07-07 13:06:42.149[1657188402149] | INFO  | main       | root.Operations                      - Starting Operations using Java 18.0.1.1 on DESKTOP-NQ4MVB7 with PID 11692 (E:\Games\git\From-Eclipse\Calculator\target\classes started by Михаил in E:\Games\git\From-Eclipse\Calculator)
+2022-07-07 13:06:42.154[1657188402154] | INFO  | main       | root.Operations                      - No active profile set, falling back to 1 default profile: "default"
+2022-07-07 13:06:43.376[1657188403376] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8080 (http)
+2022-07-07 13:06:43.389[1657188403389] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-07 13:06:43.390[1657188403390] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2022-07-07 13:06:43.390[1657188403390] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-07 13:06:43.543[1657188403543] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2022-07-07 13:06:43.546[1657188403546] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1318 ms
+2022-07-07 13:06:43.856[1657188403856] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 13:06:43.911[1657188403911] | INFO  | cluster-ClusterId{value='62c6b033c84d8521efea1a5c', description='null'}-localhost:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:1, serverValue:35}] to localhost:27017
+2022-07-07 13:06:43.918[1657188403918] | INFO  | cluster-ClusterId{value='62c6b033c84d8521efea1a5c', description='null'}-localhost:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6218700}
+2022-07-07 13:06:44.437[1657188404437] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 13:06:44.459[1657188404459] | INFO  | cluster-ClusterId{value='62c6b034c84d8521efea1a5d', description='null'}-localhost:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:2, serverValue:36}] to localhost:27017
+2022-07-07 13:06:44.463[1657188404463] | INFO  | cluster-ClusterId{value='62c6b034c84d8521efea1a5d', description='null'}-localhost:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1103000}
+2022-07-07 13:06:44.474[1657188404474] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-07 13:06:44.501[1657188404501] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-07 13:06:44.513[1657188404513] | INFO  | main       | root.Operations                      - Started Operations in 2.721 seconds (JVM running for 3.383)
+2022-07-07 13:06:50.782[1657188410782] | INFO  | http-nio-8080-exec-2 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 13:06:50.782[1657188410782] | INFO  | http-nio-8080-exec-2 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2022-07-07 13:06:50.788[1657188410788] | INFO  | http-nio-8080-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 6 ms
+2022-07-07 13:06:50.932[1657188410932] | INFO  | http-nio-8080-exec-2 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:3, serverValue:37}] to localhost:27017
+2022-07-07 13:08:44.656[1657188524656] | INFO  | main       | root.Operations                      - Starting Operations using Java 18.0.1.1 on DESKTOP-NQ4MVB7 with PID 1804 (E:\Games\git\From-Eclipse\Calculator\target\classes started by Михаил in E:\Games\git\From-Eclipse\Calculator)
+2022-07-07 13:08:44.663[1657188524663] | INFO  | main       | root.Operations                      - No active profile set, falling back to 1 default profile: "default"
+2022-07-07 13:08:45.978[1657188525978] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8080 (http)
+2022-07-07 13:08:45.991[1657188525991] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-07 13:08:45.992[1657188525992] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2022-07-07 13:08:45.993[1657188525993] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-07 13:08:46.141[1657188526141] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2022-07-07 13:08:46.141[1657188526141] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1395 ms
+2022-07-07 13:08:46.393[1657188526393] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 13:08:46.443[1657188526443] | INFO  | cluster-ClusterId{value='62c6b0ae56155c4e5581ca69', description='null'}-localhost:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:1, serverValue:38}] to localhost:27017
+2022-07-07 13:08:46.449[1657188526449] | INFO  | cluster-ClusterId{value='62c6b0ae56155c4e5581ca69', description='null'}-localhost:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3923800}
+2022-07-07 13:08:46.883[1657188526883] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 13:08:46.898[1657188526898] | INFO  | cluster-ClusterId{value='62c6b0ae56155c4e5581ca6a', description='null'}-localhost:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:2, serverValue:39}] to localhost:27017
+2022-07-07 13:08:46.902[1657188526902] | INFO  | cluster-ClusterId{value='62c6b0ae56155c4e5581ca6a', description='null'}-localhost:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4295000}
+2022-07-07 13:08:46.918[1657188526918] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-07 13:08:46.939[1657188526939] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-07 13:08:46.951[1657188526951] | INFO  | main       | root.Operations                      - Started Operations in 2.669 seconds (JVM running for 3.287)
+2022-07-07 13:08:54.837[1657188534837] | INFO  | http-nio-8080-exec-2 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 13:08:54.837[1657188534837] | INFO  | http-nio-8080-exec-2 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2022-07-07 13:08:54.840[1657188534840] | INFO  | http-nio-8080-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 3 ms
+2022-07-07 13:08:54.961[1657188534961] | INFO  | http-nio-8080-exec-2 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:3, serverValue:40}] to localhost:27017
+2022-07-07 13:14:27.489[1657188867489] | INFO  | main       | root.Operations                      - Starting Operations using Java 18.0.1.1 on DESKTOP-NQ4MVB7 with PID 7056 (E:\Games\git\From-Eclipse\Calculator\target\classes started by Михаил in E:\Games\git\From-Eclipse\Calculator)
+2022-07-07 13:14:27.496[1657188867496] | INFO  | main       | root.Operations                      - No active profile set, falling back to 1 default profile: "default"
+2022-07-07 13:14:28.738[1657188868738] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8080 (http)
+2022-07-07 13:14:28.751[1657188868751] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-07 13:14:28.752[1657188868752] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2022-07-07 13:14:28.752[1657188868752] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-07 13:14:28.923[1657188868923] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2022-07-07 13:14:28.923[1657188868923] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1350 ms
+2022-07-07 13:14:29.207[1657188869207] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 13:14:29.262[1657188869262] | INFO  | cluster-ClusterId{value='62c6b205f0a4a42e74860efa', description='null'}-localhost:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:1, serverValue:41}] to localhost:27017
+2022-07-07 13:14:29.271[1657188869271] | INFO  | cluster-ClusterId{value='62c6b205f0a4a42e74860efa', description='null'}-localhost:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=7039500}
+2022-07-07 13:14:29.710[1657188869710] | INFO  | main       | org.mongodb.driver.cluster           - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-07-07 13:14:29.722[1657188869722] | INFO  | cluster-ClusterId{value='62c6b205f0a4a42e74860efb', description='null'}-localhost:27017 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:2, serverValue:42}] to localhost:27017
+2022-07-07 13:14:29.731[1657188869731] | INFO  | cluster-ClusterId{value='62c6b205f0a4a42e74860efb', description='null'}-localhost:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8554500}
+2022-07-07 13:14:29.748[1657188869748] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-07 13:14:29.770[1657188869770] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-07 13:14:29.784[1657188869784] | INFO  | main       | root.Operations                      - Started Operations in 2.669 seconds (JVM running for 3.309)
+2022-07-07 13:14:33.819[1657188873819] | INFO  | http-nio-8080-exec-1 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-07 13:14:33.819[1657188873819] | INFO  | http-nio-8080-exec-1 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2022-07-07 13:14:33.822[1657188873822] | INFO  | http-nio-8080-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 3 ms
+2022-07-07 13:14:33.955[1657188873955] | INFO  | http-nio-8080-exec-1 | org.mongodb.driver.connection        - Opened connection [connectionId{localValue:3, serverValue:43}] to localhost:27017

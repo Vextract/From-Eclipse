@@ -1,15 +1,10 @@
 package root.main;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import root.binance.BinanceAdapter;
 import root.binance.valueObjects.CurrenciesRate;
 import root.controllers.Controller;
-import root.controllers.calculation.ControllerImpl2;
 import root.loggers.AbstractLogger;
 import root.loggers.entities.LogEntry;
-import root.repository.RepositoryMongoImpl;
-import root.repository.RepositoryMySqlImpl;
 import root.utility.customExceptions.NotEnoughArgumentsException;
 import root.utility.customExceptions.UnsupportedOperationExceptionCustom;
 
@@ -137,9 +132,7 @@ public class Listener {
             } else if (response.getException() instanceof NumberFormatException) {
                 System.out.println("Неправильный формат аргументов");
             } else if (response.getException() instanceof UnsupportedOperationExceptionCustom) {
-                System.out.println("Операция " +
-                        ((UnsupportedOperationExceptionCustom) response.getException()).getOperation() +
-                        " не поддерживается");
+                System.out.println("Операция не поддерживается");
             }
         }
     }

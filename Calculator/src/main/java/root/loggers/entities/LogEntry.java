@@ -22,9 +22,7 @@ public class LogEntry {
             } else if (e instanceof NumberFormatException) {
                 this.message = "Неправильный формат аргументов";
             } else if (e instanceof UnsupportedOperationExceptionCustom) {
-                this.message = "Операция " +
-                        ((UnsupportedOperationExceptionCustom) e).getOperation() +
-                        " не поддерживается";
+                this.message = "Операция не поддерживается";
             } else {
                 this.message = "Неизвестная ошибка";
             }

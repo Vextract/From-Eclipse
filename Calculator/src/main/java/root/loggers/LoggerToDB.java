@@ -1,7 +1,7 @@
 package root.loggers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import root.loggers.entities.LogEntry;
@@ -13,10 +13,11 @@ import java.util.logging.Level;
 @Component
 public class LoggerToDB implements AbstractLogger {
 
+	
     private Storage storage;
 
     @Autowired
-    public LoggerToDB(Storage storage) {
+    public LoggerToDB(@Qualifier("storageMongoImpl") Storage storage) {
         this.storage = storage;
     }
 

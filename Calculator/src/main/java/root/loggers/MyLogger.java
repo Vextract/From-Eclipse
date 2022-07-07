@@ -3,14 +3,12 @@ package root.loggers;
 import root.loggers.entities.LogEntry;
 import root.main.Response;
 
-import java.text.SimpleDateFormat;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class MyLogger implements AbstractLogger {
-    private SimpleDateFormat format = new SimpleDateFormat("yyyy.MM.dd - HH:mm:ss");
+	
     private Logger logger;
-    private String loggerName;
 
     public MyLogger(Logger logger) {
         this.logger = logger;

@@ -14,4 +14,5 @@ public interface Repository {
     List<Log> getErrorsLogToDate(Date to);
 
     List<Log> getErrorsLogByTwoFilters(Date from, Date to);
+
 }

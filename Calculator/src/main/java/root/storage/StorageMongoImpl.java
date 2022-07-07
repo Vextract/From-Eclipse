@@ -1,8 +1,6 @@
 package root.storage;
 
 import com.mongodb.*;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import root.loggers.entities.LogEntry;
 import root.main.Response;
@@ -10,12 +8,14 @@ import root.main.Response;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class StorageMongoImpl implements Storage {
 
 
     private DB database;
-
 
     public StorageMongoImpl(DB database) {
         this.database = database;
@@ -37,8 +37,7 @@ public class StorageMongoImpl implements Storage {
 
     public void log(Response response) {
         DBCollection collection = database.getCollection("Logs");
-        DBObject log = new BasicDBObject("operation", response.getOperation())
-                .append("answer", response.getResult());
+        DBObject log = new BasicDBObject("operation", response);
         collection.insert(log);
     }
 }

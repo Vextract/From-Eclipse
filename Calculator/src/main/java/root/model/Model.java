@@ -2,10 +2,12 @@ package root.model;
 
 import org.springframework.stereotype.Component;
 
+import root.utility.customExceptions.UnsupportedOperationExceptionCustom;
+
 @Component
 public class Model {
 
-    public double processNumbers(double firstNumber, double secondNumber, String sign) {
+    public Double processNumbers(Double firstNumber, Double secondNumber, String sign) throws UnsupportedOperationExceptionCustom {
 
         // Определяем операцию по переданному знаку, при отсутствии таковой - исключение
         switch (sign) {
@@ -22,23 +24,23 @@ public class Model {
                 return divide(firstNumber, secondNumber);
             }
             default:
-                throw new UnsupportedOperationException();
         }
+        throw new UnsupportedOperationExceptionCustom("Такая операция не поддерживается.");
     }
 
-    private double add(double firstNumber, double secondNumber) {
+    private Double add(Double firstNumber, Double secondNumber) {
         return firstNumber + secondNumber;
     }
 
-    private double subtract(double firstNumber, double secondNumber) {
+    private Double subtract(Double firstNumber, Double secondNumber) {
         return firstNumber - secondNumber;
     }
 
-    private double multiply(double firstNumber, double secondNumber) {
+    private Double multiply(Double firstNumber, Double secondNumber) {
         return firstNumber * secondNumber;
     }
 
-    private double divide(double firstNumber, double secondNumber) {
+    private Double divide(Double firstNumber, Double secondNumber) {
         return firstNumber / secondNumber;
     }
 

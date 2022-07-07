@@ -16,7 +16,6 @@ public class StorageSqlImpl implements Storage {
 
     private final JdbcTemplate jdbcTemplate;
 
-    @Autowired
     public StorageSqlImpl(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }

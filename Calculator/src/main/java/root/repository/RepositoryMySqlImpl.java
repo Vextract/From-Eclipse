@@ -15,7 +15,6 @@ public class RepositoryMySqlImpl implements Repository {
 
     private final JdbcTemplate jdbcTemplate;
 
-    @Autowired
     public RepositoryMySqlImpl(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }

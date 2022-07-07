@@ -1,36 +1,37 @@
 package root.controllers.calculation;
 
+import org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.DoubleEditor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.*;
 
 import root.controllers.Controller;
 import root.loggers.AbstractLogger;
 import root.loggers.entities.LogEntry;
-import root.main.*;
-import root.model.Model;
+import root.main.CalculationPackage;
+import root.main.Response;
 import root.utility.customExceptions.FilterValidityException;
-import root.utility.customExceptions.NotEnoughArgumentsException;
 import root.utility.customExceptions.UnsupportedOperationExceptionCustom;
-import root.utility.view.View;
 
-@Component
-public class ControllerImpl implements Controller {
+@RequestMapping("calculation_api")
+@RestController
+public class CalculationController implements Controller {
 
-	private final AbstractLogger logger;
+    private final AbstractLogger logger;
     private final CalculatorService service;
 
     @Autowired
-    public ControllerImpl(AbstractLogger logger, CalculatorService service) {
+    public CalculationController(AbstractLogger logger, CalculatorService service) {
         this.logger = logger;
         this.service = service;
     }
 
-    public Response processIncomingInformation(String[] args) {
-
+    @RequestMapping("/process")
+    @GetMapping
+    public Response processIncomingInformation(@RequestBody CalculationPackage calcPackage) {
     	try {
-			return new Response(createStringForLog(Double.parseDouble(args[0]), Double.parseDouble(args[1]), args[2]), 
-					service.validateAndProcessOperation(
-							new CalculationPackage(Double.parseDouble(args[0]), Double.parseDouble(args[1]), args[2])), null);
+    		Double answer = service.validateAndProcessOperation(calcPackage);
+    		String messageOrOperation = createStringForLog(calcPackage.getA(), calcPackage.getB(), calcPackage.getSign());
+			return new Response(messageOrOperation, answer, null);
 		} catch (Exception e) {
 			try {
 				return new Response(e.getMessage(), null, e);
@@ -39,7 +40,7 @@ public class ControllerImpl implements Controller {
 			}
 		} 
     }
-
+    
     private String createStringForLog(double number1, double number2, String operation) {
     	return number1 + " " + operation + " " + number2;
     }

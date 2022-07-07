@@ -4,31 +4,31 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class CalculationPackage {
 
-    private double a;
-    private double b;
+    private Double a;
+    private Double b;
     private String sign;
 
-    public CalculationPackage(@JsonProperty("a") double a,
-                              @JsonProperty("b") double b,
+    public CalculationPackage(@JsonProperty("a") Double a,
+                              @JsonProperty("b") Double b,
                               @JsonProperty("sign") String sign) {
         this.a = a;
         this.b = b;
         this.sign = sign;
     }
 
-    public double getA() {
+    public Double getA() {
         return a;
     }
 
-    public void setA(double a) {
+    public void setA(Double a) {
         this.a = a;
     }
 
-    public double getB() {
+    public Double getB() {
         return b;
     }
 
-    public void setB(double b) {
+    public void setB(Double b) {
         this.b = b;
     }
 

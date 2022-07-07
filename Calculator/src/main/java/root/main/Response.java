@@ -1,33 +1,28 @@
 package root.main;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 public class Response {
+	
+	private String message;
 
-    private double result;
+    private Double result;
 
     private Exception exception;
 
-    private String operation;
+	public Response(String message, Double result, Exception exception) {
+		this.message = message;
+		this.result = result;
+		this.exception = exception;
+	}
 
-    public Response(String operation, double result) {
-        this.operation = operation;
-        this.result = result;
-    }
-
-    public Response(Exception exception) {
-        this.exception = exception;
-    }
-
-    public double getResult() {
+	public Double getResult() {
         return result;
-    }
-
-    public String getOperation() {
-        return operation;
     }
 
     public Exception getException() {
         return exception;
     }
+
+	public String getMessage() {
+		return message;
+	}
 }

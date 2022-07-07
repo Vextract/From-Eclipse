@@ -1,6 +1,7 @@
 package root.repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import root.loggers.entities.Log;
@@ -18,15 +19,17 @@ public class LogService {
     private FiltersValidator validator;
 
     @Autowired
-    public LogService(Repository repository, FiltersValidator validator) {
+    public LogService(@Qualifier("repositoryMongoImpl") Repository repository, FiltersValidator validator) {
         this.repository = repository;
         this.validator = validator;
     }
 
-    public LogService(Repository repository) {
-        this.repository = repository;
-    }
-
+    /**
+     * 
+     * @param dateFilters
+     * @return List of Log Objects
+     * @throws FilterValidityException when array of DateFilters is not valid.
+     */
     public List<Log> validateAndGetFromDB(DateFilter[] dateFilters) throws FilterValidityException {
         // Если фильтров нет.
         if (dateFilters == null) {
