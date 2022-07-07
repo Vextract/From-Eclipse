@@ -4,9 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
+import root.interfaces.AbstractLogger;
+import root.interfaces.Storage;
 import root.loggers.entities.LogEntry;
-import root.main.Response;
-import root.storage.Storage;
+import root.modules.calculation.entities.Response;
 
 import java.util.logging.Level;
 

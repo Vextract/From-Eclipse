@@ -1,7 +1,8 @@
 package root.loggers;
 
+import root.interfaces.AbstractLogger;
 import root.loggers.entities.LogEntry;
-import root.main.Response;
+import root.modules.calculation.entities.Response;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

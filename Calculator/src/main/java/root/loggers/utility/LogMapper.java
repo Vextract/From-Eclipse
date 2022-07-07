@@ -2,7 +2,7 @@ package root.loggers.utility;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import root.loggers.entities.Log;
+import root.modules.logs.entities.Log;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -2,13 +2,13 @@ package root.storage;
 
 import com.mongodb.*;
 
+import root.interfaces.Storage;
 import root.loggers.entities.LogEntry;
-import root.main.Response;
+import root.modules.calculation.entities.Response;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
